@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
+        <title>Drag and Drop</title>
+    </head>
+   <body>
+      <center>
+         <h2>Drag and drop HTML5 demo</h2>
+         <div>Try to move the purple box into the pink box.</div>
+         <div id="boxA" draggable="true" ondragstart="return dragStart(event)">
+            <p>Drag Me</p>
+         </div>
+         <div id="boxB" 
+            ondragenter="return dragEnter(event)" 
+            ondrop="return dragDrop(event)" 
+            ondragover="return dragOver(event)">Dustbin</div>
+
+         <section class="flex">
+             <article class="area flex"></article>
+             <article class="items flex" >
+                 <div id="box" class="cajas" draggable="true" ondragstart="return dragStart(event)"></div>
+                 <div id="box1" draggable="true" class="cajas" ondragstart="return dragStart(event)"></div>
+             </article>
+             <article class="area flex" ondragenter="return dragEnter(event)" 
+             ondrop="return dragDrop(event)" 
+             ondragover="return dragOver(event)" ></article>
+         </section>
+      </center>
+   </body>
+</html>
